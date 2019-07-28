@@ -6,7 +6,7 @@ let counter = 1;
 
 const app = Elm.Main.init({
   node: document.getElementById("root"),
-  flags: counter
+  flags: { value: counter }
 });
 
 app.ports.sendStuff.subscribe(data => {

@@ -22,13 +22,18 @@ type alias Model =
     { counter : Int, error : String }
 
 
-init : Int -> ( Model, Cmd Msg )
-init value =
-    ( { counter = value, error = "No error" }, Cmd.none )
+init : Flags -> ( Model, Cmd Msg )
+init flags =
+    ( { counter = flags.value, error = "No error" }, Cmd.none )
 
 
 
 ---- UPDATE ----
+
+
+type alias Flags =
+    { value : Int
+    }
 
 
 type Msg
@@ -80,7 +85,7 @@ subscriptions model =
     receiveStuff (Json.Decode.decodeValue valueDecoder >> Received)
 
 
-main : Program Int Model Msg
+main : Program Flags Model Msg
 main =
     Browser.element
         { init = init
