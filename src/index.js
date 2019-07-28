@@ -5,8 +5,7 @@ import registerServiceWorker from "./registerServiceWorker";
 let counter = 1;
 
 const app = Elm.Main.init({
-  node: document.getElementById("root"),
-  flags: { value: counter }
+  node: document.getElementById("root")
 });
 
 app.ports.sendStuff.subscribe(data => {
