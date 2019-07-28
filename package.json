@@ -1,0 +1,30 @@
+{
+  "name": "elm-ports",
+  "version": "1.0.0",
+  "description": "A simple demonstration on how to work with Elm Flags and Ports",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "elm-app build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlengrand/elm-ports.git"
+  },
+  "keywords": [
+    "elm",
+    "elm-lang",
+    "ports"
+  ],
+  "author": "Julien Lengrand-Lambert <julien@lengrand.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlengrand/elm-ports/issues"
+  },
+  "homepage": "https://github.com/jlengrand/elm-ports#readme",
+  "devDependencies": {
+    "create-elm-app": "^3.2.1"
+  }
+}
